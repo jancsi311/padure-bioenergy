@@ -104,9 +104,6 @@ if($return_array['success'] == '1')
   send_email($fname,$lname,$email,$subject,$message);
 }
 
-<?php
-    print phpinfo();  
-?>
 
 header('Content-type: text/json');
 echo json_encode($return_array);
