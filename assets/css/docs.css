@@ -169,6 +169,8 @@ hr.soften2 {
 /* Base class
 ------------------------- */
 .jumbotron {
+	height: 67vh;
+	box-shadow: 5px 5px 10px #000000;
 	position: relative;
 	padding: 40px 0;
 	color: #fff;
@@ -190,6 +192,7 @@ hr.soften2 {
 	line-height: 30px;
 	margin-bottom: 30px;
 }
+
 .splash {
 	position: absolute;
 	z-index: -1000;
@@ -271,35 +274,42 @@ hr.soften2 {
 }
 /* Masthead (docs home)
 ------------------------- */
+
 .masthead {
+	background: 
+		linear-gradient( 
+			rgba(0, 0, 0, 0.2), 
+			rgba(0, 0, 0, 0.4) 
+		);
 	overflow: hidden;
-	padding: 150px 0 100px;
+	padding: 50px 0 75px;
 	margin-bottom: 0;
 	color: #fff;
 }
 .masthead h1 {
 	font-size: 3em;
-	color: #436F00;
-	text-shadow: 2px 2px 4px #fff;
-	margin: 60px 0;
+	color: #fff;
+	text-shadow: 2px 2px 4px #000;
+	margin: 90px 0;
 	line-height: 1.1em;
 }
 .masthead p {
 	font-size: 1.6em;
-	color: #000000;
-	text-shadow: 2px 2px 4px #fff;
+	color: #fff;
+	text-shadow: 2px 2px 4px #000;
 	line-height: 1.4em;
 	font-weight: normal;
 	margin-bottom: 60px;
+	margin-top: 140px;
 }
 .details {
 	font-size: 1.6em;
-	color: #000000;
-	text-shadow: 2px 2px 4px #fff;
-	font-weight: bold;
+	color: #fff;
+	text-shadow: 2px 2px 4px #000;
 }
 
 .details:hover {
+	font-weight: bold;
 	color: #fff;
 	text-decoration: none;
 	text-shadow: 2px 2px 4px #000000;
@@ -312,9 +322,9 @@ hr.soften2 {
 	color: #fff;
 	background-color: #436F00;
 	padding-left: 10px;
-	-webkit-border-radius: 20px;
-	-moz-border-radius: 20px;
-	border-radius: 20px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
 }
 .masthead .navbar .nav > li > a:hover {
 	color: #61c168;
@@ -432,7 +442,7 @@ hr.soften2 {
 }
 
 .brand img {
-	width: 200px;
+	width: 160px;
 }
 .contact form label {
 	display: block;
@@ -729,7 +739,7 @@ hr.soften2 {
 	font-weight: 200;
 	margin-bottom: 20px;
 }
-.marketing p {
+.marketing p, li {
 	font-size: 16px;
 	line-height: 1.5;
 }
@@ -1893,6 +1903,13 @@ label {
 }
 }
 
+@media (max-width: 1199px) {
+.jumbotron {
+	height: 54vh;
+}
+}
+
+
 /* Desktop
 ------------------------- */
 @media (max-width: 980px) {
@@ -1964,6 +1981,7 @@ body {
 .blog .indexMeta h2 {
 	width: 300px;
 }
+
 }
 
 /* Tablet
