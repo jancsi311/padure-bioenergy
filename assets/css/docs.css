@@ -169,10 +169,10 @@ hr.soften2 {
 /* Base class
 ------------------------- */
 .jumbotron {
-	height: 67vh;
+	height: 80vh;
+	max-height: 710px;
 	box-shadow: 5px 5px 10px #000000;
 	position: relative;
-	padding: 40px 0;
 	color: #fff;
 	text-align: center;
 	text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
@@ -198,13 +198,14 @@ hr.soften2 {
 	z-index: -1000;
 	top: 0;
 	left: 0;
-	height: auto;
+	height: inherit;
 }
 .splash img {
 	height: auto;
 	width: 100%;
 }
 .show-case-item {
+	height: 80%;
 }
 #nav-header {
 	position: absolute;
@@ -282,7 +283,6 @@ hr.soften2 {
 			rgba(0, 0, 0, 0.4) 
 		);
 	overflow: hidden;
-	padding: 50px 0 75px;
 	margin-bottom: 0;
 	color: #fff;
 }
@@ -290,7 +290,6 @@ hr.soften2 {
 	font-size: 3em;
 	color: #fff;
 	text-shadow: 2px 2px 4px #000;
-	margin: 90px 0;
 	line-height: 1.1em;
 }
 .masthead p {
@@ -299,8 +298,6 @@ hr.soften2 {
 	text-shadow: 2px 2px 4px #000;
 	line-height: 1.4em;
 	font-weight: normal;
-	margin-bottom: 60px;
-	margin-top: 140px;
 }
 .details {
 	font-size: 1.6em;
@@ -320,6 +317,7 @@ hr.soften2 {
 
 .row-fluid  h3 {
 	color: #fff;
+	box-shadow: 3px 3px 6px #000000;
 	background-color: #436F00;
 	padding-left: 10px;
 	-webkit-border-radius: 10px;
@@ -442,7 +440,7 @@ hr.soften2 {
 }
 
 .brand img {
-	width: 160px;
+	height: 15vh;
 }
 .contact form label {
 	display: block;
@@ -726,7 +724,7 @@ hr.soften2 {
 
 .marketing {
 	text-align: center;
-	color: #5a5a5a;
+	color: #515251;
 }
 .marketing h1 {
 	margin: 60px 0 10px;
@@ -740,8 +738,9 @@ hr.soften2 {
 	margin-bottom: 20px;
 }
 .marketing p, li {
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 1.5;
+	margin-bottom: 10px;
 }
 .marketing .marketing-byline {
 	margin-bottom: 40px;
@@ -751,6 +750,7 @@ hr.soften2 {
 	color: #999;
 }
 .marketing img {
+	box-shadow: 5px 5px 10px #000000;
 	display: block;
 	margin: 0 auto 30px;
 }
@@ -885,7 +885,7 @@ footer .copyright {
 }
 .footer {
 	border-top: 1px solid #e5e5e5;
-	background: url(../img/bg_footer.png);
+	background-color: #436F00;
 	color: #919191;
 }
 .footer a {
@@ -1904,8 +1904,7 @@ label {
 }
 
 @media (max-width: 1199px) {
-.jumbotron {
-	height: 54vh;
+
 }
 }
 
@@ -2083,9 +2082,7 @@ body {
 .navbar .nav > li {
 	float: left;
 }
-li {
-	line-height: 20px;
-}
+
 #main-nav {
 	float: right;
 }
