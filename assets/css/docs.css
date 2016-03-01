@@ -299,6 +299,14 @@ hr.soften2 {
 	line-height: 1.4em;
 	font-weight: normal;
 }
+
+.title-spacer {
+	height: 25%;
+}
+.p-spacer {
+	height: 13px;
+}
+
 .details {
 	font-size: 1.6em;
 	color: #fff;
@@ -339,7 +347,7 @@ hr.soften2 {
 }
 #banner-pagination ul {
 	list-style: none;
-	margin: 20px 0 0 0;
+	margin: 5px;
 }
 #banner-pagination ul li {
 	display: inline;
@@ -1904,7 +1912,12 @@ label {
 }
 
 @media (max-width: 1199px) {
+.title-spacer {
+	height: 20%;
+}
 
+.jumbotron {
+	height: 54vw;
 }
 }
 
@@ -1956,6 +1969,7 @@ body {
 /* Widen masthead and social buttons to fill body padding */
 .jumbotron {
 	margin-top: 10px; /* Offset bottom margin on .navbar */
+    height: 50vw;
 }
 /* Adjust sidenav width */
 .bs-docs-sidenav {
@@ -1966,10 +1980,10 @@ body {
 	top: 0;
 }
 .masthead h1 {
-	font-size: 2.4em;
+	font-size: 2.1em;
 }
 .masthead p,  .masthead .btn {
-	font-size: 18px;
+	font-size: 17px;
 }
 .navbar .btn-navbar {
 	margin-top: 50px;
@@ -1992,16 +2006,26 @@ body {
 }
 /* Widen masthead and social buttons to fill body padding */
 .jumbotron {
-	padding: 40px 20px;
+    height: 38vw;
+	padding: 0;
 	margin-top: 0; /* Offset bottom margin on .navbar */
 	margin-right: -20px;
 	margin-left: -20px;
 }
 .masthead h1 {
-	font-size: 2.5em;
+	font-size: 1.7em;
 }
 .masthead p,  .masthead .btn {
+	font-size: 13px;
+}
+.details {
 	font-size: 16px;
+}
+.title-spacer {
+	height: 9%;
+}
+.p-spacer {
+	height: 7%;
 }
 .marketing .span4 {
 	margin-bottom: 40px;
