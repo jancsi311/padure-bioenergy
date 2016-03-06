@@ -750,6 +750,9 @@ hr.soften2 {
 	line-height: 1.6;
 	margin-bottom: 10px;
 }
+.marketing p {
+	text-indent: 40px;
+}
 .marketing .marketing-byline {
 	margin-bottom: 40px;
 	font-size: 20px;
@@ -905,6 +908,7 @@ footer .copyright {
 	line-height: 19px;
 	font-size: 13px;
 	color: #fff;
+	text-indent: initial;
 }
 .footer-logo {
 	width: 200px;
@@ -1930,6 +1934,15 @@ label {
 	margin-top: 80px;
 }
 
+#forest-img-1 {
+	margin-top: 80px;
+
+}
+
+#work-img {
+	margin-top: 20px;
+}
+
 #wood-tracking {
 	margin-top: 70px;
 }
@@ -2104,6 +2117,9 @@ body {
 	right: auto;
 	top: auto;
 	width: 100%
+}
+#main-nav li{
+	text-indent: none;
 }
 }
 
