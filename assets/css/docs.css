@@ -229,44 +229,7 @@ hr.soften2 {
 	text-decoration: none;
 }
 /* Download button */
-.masthead .bigbtn {
-	color: #fff;
-	text-shadow: 0 1px 0 #912e01;
-	background-color: #C76E10;
-	text-decoration: none;
-	padding: .3em 1.4em;
-	-webkit-border-radius: 2.8em;
-	-moz-border-radius: 2.8em;
-	-o-border-radius: 2.8em;
-	-ms-border-radius: 2.8em;
-	border-radius: 2.8em;
-	background-image: linear-gradient(bottom, rgb(255,96,43) 1%, rgb(255,148,67) 100%);
-	background-image: -o-linear-gradient(bottom, rgb(255,96,43) 1%, rgb(255,148,67) 100%);
-	background-image: -moz-linear-gradient(bottom, rgb(255,96,43) 1%, rgb(255,148,67) 100%);
-	background-image: -webkit-linear-gradient(bottom, rgb(255,96,43) 1%, rgb(255,148,67) 100%);
-	background-image: -ms-linear-gradient(bottom, rgb(255,96,43) 1%, rgb(255,148,67) 100%);
-	box-shadow: inset 0 1px 0 #ffd265, 0 0 0 1px #912e01, 0 0 0 7px rgba(0,0,0,.1), 0 1px 4px rgba(0,0,0,.6);
-	font-style: normal;
-	overflow: visible;
-	border: none;
-	font-size: 24px;
-}
-.masthead .bigbtn:hover {
-	background-color: #ff831e;
-	background-image: linear-gradient(bottom, rgb(255,148,67) 1%, rgb(255,96,43) 100%);
-	background-image: -o-linear-gradient(bottom, rgb(255,148,67) 1%, rgb(255,96,43) 100%);
-	background-image: -moz-linear-gradient(bottom, rgb(255,148,67) 1%, rgb(255,96,43) 100%);
-	background-image: -webkit-linear-gradient(bottom, rgb(255,148,67) 1%, rgb(255,96,43) 100%);
-	background-image: -ms-linear-gradient(bottom, rgb(255,148,67) 1%, rgb(255,96,43) 100%);
-}
-.masthead .bigbtn:active {
-	background-color: #ff831e;
-	background-image: linear-gradient(bottom, rgb(255,148,67) 1%, rgb(255,96,43) 100%);
-	background-image: -o-linear-gradient(bottom, rgb(255,148,67) 1%, rgb(255,96,43) 100%);
-	background-image: -moz-linear-gradient(bottom, rgb(255,148,67) 1%, rgb(255,96,43) 100%);
-	background-image: -webkit-linear-gradient(bottom, rgb(255,148,67) 1%, rgb(255,96,43) 100%);
-	background-image: -ms-linear-gradient(bottom, rgb(255,148,67) 1%, rgb(255,96,43) 100%);
-}
+
 .page-header h1 {
 	margin: 5px 0 7px 0;
 }
@@ -356,78 +319,6 @@ hr.soften2 {
 }
 /* Features on Home */
 
-.features {
-}
-.icon-layout {
-	background: url('../img/responsive.png') no-repeat left top;
-	width: 90px;
-	height: 90px;
-	margin-top: 2px;
-	top: 2px;
-	left: 0;
-	float: left;
-	padding-bottom: 0px;
-	padding-right: 18px;
-}
-.icon-values {
-	background: url('../img/core-values.png') no-repeat left top;
-	width: 90px;
-	height: 90px;
-	margin-top: 2px;
-	top: 2px;
-	left: 0;
-	float: left;
-	padding-bottom: 0px;
-	padding-right: 18px;
-}
-.icon-think-creative {
-	background: url('../img/think-creative.png') no-repeat left top;
-	width: 90px;
-	height: 90px;
-	margin-top: 2px;
-	top: 2px;
-	left: 0;
-	float: left;
-	padding-bottom: 0px;
-	padding-right: 18px;
-}
-/* Perks section on Home */
-
-.benefit {
-	background: url('../images/team_benefits_delimiter.png') no-repeat left bottom;
-	display: block;
-	padding: 1em 0;
-}
-.benefit .first {
-	padding: 0.5em 0 1em 0;
-}
-.benefit .icon {
-	float: left;
-	width: 64px;
-	height: 80px;
-	margin-right: 20px;
-}
-.benefit_text {
-	float: left;
-	width: 253px;
-}
-.benefit_text div {
-	margin: 0;
-}
-.benefit_text p {
-	font-size: 13px;
-	margin: 0;
-}
-.perks-title { font-size:16px; font-weight:bold; }
-.flexible-hours {
-	background: url('../img/flexible-hours.png') no-repeat left 7px;
-}
-.coffee-day {
-	background: url('../img/coffee-day.png') no-repeat left 7px;
-}
-.personal-projects {
-	background: url('../img/personal-projects.png') no-repeat left 7px;
-}
 .question-section {
 	margin-bottom: 60px;
 }
@@ -471,18 +362,6 @@ hr.soften2 {
 }
 .contact form img.ajax-loader {
 	display: none;
-}
-.img-location {
-	background: url(../img/icon-location.png) no-repeat 0 7px;
-	padding-left: 45px !important;
-}
-.img-skype {
-	background: url(../img/icon-skype.png) no-repeat 0 7px;
-	padding-left: 45px !important;
-}
-.img-phone {
-	background: url(../img/icon-phone.png) no-repeat 0 7px;
-	padding-left: 45px !important;
 }
 .bordered-list {
 	list-style: none;
@@ -592,126 +471,6 @@ hr.soften2 {
 	position: relative;
 	top: -2px;
 }
-#pricing .price-plan .info ul li.feature-pages, #pricing .price-plan .info ul li.feature-bandwidth, #pricing .price-plan .info ul li.feature-storage, #pricing .price-plan .info ul li.feature-contributors {
-	font-weight: bold;
-	color: #222;
-}
-#pricing .price-plan .info ul li:first-child {
-	padding-top: 10px;
-}
-#pricing .price-plan .info ul li:last-child {
-	padding-bottom: 10px;
-}
-#pricing .price-plan-standard {
-	margin-left: 0;
-}
-#pricing .price-plan-standard .bubble .inside {
-	text-indent: 12px;
-}
-#pricing .price-plan-standard .bubble .inside .amt {
-	margin-left: 3px;
-}
-#pricing .price-plan-unlimited {
-	margin-left: 30px;
-}
-#pricing .price-plan-unlimited .bubble .inside {
-	text-indent: 8px;
-}
-#pricing .get-started {
-	padding-left: 60px;
-	padding-top: 115px;
-}
-#pricing .get-started h2, #pricing .get-started p {
-	font-size: 26px;
-	font-weight: 300;
-	line-height: 1.5em;
-	margin: 0;
-}
-#pricing .get-started h2 {
-	color: #1d1d1d;
-}
-#pricing .get-started p {
-	color: #888;
-}
-#pricing .get-started a.get-started-button {
-	margin-top: 88px;
-	background-color: #F5E78B;
-	-webkit-transition: background-color 0.1s ease-out, color 0.1s ease-out;
-	-moz-transition: background-color 0.1s ease-out, color 0.1s ease-out;
-	-o-transition: background-color 0.1s ease-out, color 0.1s ease-out;
-	transition: background-color 0.1s ease-out, color 0.1s ease-out;
-	padding: 12px 40px 11px;
-	color: black;
-	text-transform: uppercase;
-	font-size: 15px;
-	font-weight: 600;
-	-moz-border-radius: 50px;
-	border-radius: 50px;
-}
-#pricing .get-started a.get-started-button:hover {
-	background-color: #f2e9ad;
-}
-#pricing .questions {
-	padding: 90px 0 0 0;
-	clear: both;
-}
-#pricing .questions .header h2 {
-	background: #1d1d1d;
-	padding: 30px 20px;
-	color: white;
-	font-weight: 100;
-	font-size: 36px;
-	display: block;
-	width: auto;
-	display: inline-block;
-}
-#pricing .questions h3 {
-	color: #222;
-	font-size: 16px;
-	margin-top: 2em;
-	font-weight: 600;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	line-height: 24px;
-	border-bottom: 2px solid;
-	padding-bottom: 10px;
-	margin-bottom: 0;
-	display: inline-block;
-}
-#pricing .questions p {
-	font-size: 14px;
-	line-height: 24px;
-	color: #777;
-}
-#pricing .questions .column {
-	width: 450px;
-	float: left;
-}
-#pricing .questions .column-first {
-	margin-right: 60px;
-}
-/* Social proof buttons from GitHub & Twitter */
-.bs-docs-social {
-	padding: 15px 0;
-	text-align: center;
-	background-color: #f5f5f5;
-	border-top: 1px solid #fff;
-	border-bottom: 1px solid #ddd;
-}
-/* Quick links on Home */
-.bs-docs-social-buttons {
-	margin-left: 0;
-	margin-bottom: 0;
-	padding-left: 0;
-	list-style: none;
-}
-.bs-docs-social-buttons li {
-	display: inline-block;
-	padding: 5px 8px;
-	line-height: 1;
- *display: inline;
- *zoom: 1;
-}
 /* Subhead (other pages)
 ------------------------- */
 .subhead {
@@ -797,31 +556,6 @@ iframe {
 /* Footer
 -------------------------------------------------- */
 
-.footer blockquote {
-	background: url(../img/quote1.png) no-repeat 50% 0;
-	padding: 60px 0 0 0;
-	text-align: center;
-	color: #d8c431;
-	border-left: 0px;
-	margin: 0;
-}
-.footer blockquote footer {
-	padding: 0 0 20px 0;
-}
-.footer blockquote footer p {
-	font-size: .8em;
-	text-transform: uppercase;
-	display: block;
-}
-.footer blockquote p.testimonial {
-	font-size: 1.5em;
-	color: #D8C431;
-}
-.footer blockquote .name {
-	color: #666;
-	font-size: 0.8em;
-	margin-bottom: 0;
-}
 footer h2, footer h3, footer h4 {
 	color: #fff;
 	font-weight: normal;
@@ -831,66 +565,6 @@ footer .copyright {
 	margin-top: 20px;
 	border-bottom: 0px;
 	font-size: 0.8em;
-}
-.footer_social {
-	padding: 0px;
-	margin: 0px;
-	right: 0px;
-	padding-top: 0px;
-	list-style-type: none;
-	top: 51px;
-}
-.footer_social li {
-	float: left;
-	margin-left: 15px;
-}
-.footer_social li:first-child {
-	margin-left: 0px;
-}
-.footer_social li a {
-	width: 48px;
-	height: 48px;
-	text-indent: -9999px;
-	border: 1px solid #000;
-	box-shadow: inset 0px 1px 0px rgba(255,255,255,0.2);
-	background-color: #0d0d0d;
-	display: block;
-	-webkit-transition: background-color 250ms ease-in-out;
-	-moz-transition: background-color 250ms ease-in-out;
-	-o-transition: background-color 250ms ease-in-out;
-	transition: background-color 250ms ease-in-out;
-}
-.footer_social li a:active {
-	box-shadow: inset 0px 1px 3px rgba(0,0,0,0.8), 0px 1px 0px rgba(255,255,255,0.2);
-	position: relative;
-	top: 1px;
-}
-.footer_facebook {
-	background: url('../img/footer_facebook.png') no-repeat 50% 50% #0d0d0d;
-}
-.footer_facebook:hover {
-	background-color: #37589f;
-}
-.footer_twitter {
-	background: url('../img/footer_twitter.png') no-repeat 50% 50% #0d0d0d;
-}
-.footer_twitter:hover {
-	background-color: #1bd7ed;
-	box-shadow: inset 0px 1px 0px rgba(255,255,255,0.6);
-}
-.footer_googleplus {
-	background: url('../img/footer_google.png') no-repeat 50% 50% #0d0d0d;
-}
-.footer_googleplus:hover {
-	background-color: #b70000;
-	box-shadow: inset 0px 1px 0px rgba(255,255,255,0.6);
-}
-.footer_rss {
-	background: url('../img/footer_rss.png') no-repeat 50% 50% #0d0d0d;
-}
-.footer_rss:hover {
-	background-color: #ff9c00;
-	box-shadow: inset 0px 1px 0px rgba(255,255,255,0.6);
 }
 .footer {
 	border-top: 1px solid #e5e5e5;
@@ -1004,43 +678,6 @@ footer .copyright {
 }
 .page-header .toggle-all {
 	margin-top: 5px;
-}
-/* Space out h3s when following a section */
-.download h3 {
-	margin-bottom: 5px;
-}
-.download-builder input + h3, .download-builder .checkbox + h3 {
-	margin-top: 9px;
-}
-/* Fields for variables */
-.download-builder input[type=text] {
-	margin-bottom: 9px;
-	font-family: Menlo, Monaco, "Courier New", monospace;
-	font-size: 12px;
-	color: #d14;
-}
-.download-builder input[type=text]:focus {
-	background-color: #fff;
-}
-/* Custom, larger checkbox labels */
-.download .checkbox {
-	padding: 6px 10px 6px 25px;
-	font-size: 13px;
-	line-height: 18px;
-	color: #555;
-	background-color: #f9f9f9;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	cursor: pointer;
-}
-.download .checkbox:hover {
-	color: #333;
-	background-color: #f5f5f5;
-}
-.download .checkbox small {
-	font-size: 12px;
-	color: #777;
 }
 /* Variables section */
 #variables label {
