@@ -171,7 +171,7 @@ hr.soften2 {
 .jumbotron {
 	height: 80vh;
 	max-height: 710px;
-	box-shadow: 5px 5px 10px #000000;
+	box-shadow: 10px 10px 20px #000000;
 	position: relative;
 	color: #fff;
 	text-align: center;
@@ -325,7 +325,7 @@ hr.soften2 {
 
 .row-fluid  h3 {
 	color: #fff;
-	box-shadow: 3px 3px 6px #000000;
+	box-shadow: 7px 7px 10px #000000;
 	background-color: #436F00;
 	padding-left: 10px;
 	-webkit-border-radius: 10px;
@@ -732,7 +732,7 @@ hr.soften2 {
 
 .marketing {
 	text-align: center;
-	color: #515251;
+	color: #000;
 }
 .marketing h1 {
 	margin: 60px 0 10px;
@@ -746,8 +746,8 @@ hr.soften2 {
 	margin-bottom: 20px;
 }
 .marketing p, li {
-	font-size: 18px;
-	line-height: 1.5;
+	font-size: 17px;
+	line-height: 1.6;
 	margin-bottom: 10px;
 }
 .marketing .marketing-byline {
@@ -758,12 +758,18 @@ hr.soften2 {
 	color: #999;
 }
 .marketing img {
-	box-shadow: 5px 5px 10px #000000;
+	box-shadow: 10px 10px 20px #000000;
 	display: block;
-	margin: 0 auto 30px;
+	margin: 0 auto 50px auto;
+}
+iframe {
+	display: block;
+	box-shadow: 10px 10px 20px #000000;
+	border: 3px solid #C76E10;
+	margin: 20px auto !important;
 }
 .textleft {
-	text-align: left;
+	text-align: justify;
 }
 .services {
 	list-style: none;
@@ -771,11 +777,6 @@ hr.soften2 {
 }
 .services li {
 	line-height: 30px;
-}
-.bordertop {
-	border-top: 1px solid #EEE;
-	margin-top: 20px;
-	padding-top: 20px;
 }
 .img-border {
 	max-width: 95%;
@@ -823,13 +824,10 @@ footer h2, footer h3, footer h4 {
 	font-weight: normal;
 }
 footer .copyright {
+	color: white;
+	margin-top: 20px;
 	border-bottom: 0px;
 	font-size: 0.8em;
-}
-.footer ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
 }
 .footer_social {
 	padding: 0px;
@@ -900,17 +898,27 @@ footer .copyright {
 	color: #fff;
 }
 .footer a:hover {
-	color: #61c168
+	font-weight: bold;
+	text-decoration: none;
 }
-.footer-links li {
-	float: left;
-	width: 20%;
-	line-height: 32px;
-	font-size: 12px;
-	border-bottom: 1px solid #232323;
+.footer-links li, .footer-address li {
+	line-height: 19px;
+	font-size: 13px;
+	color: #fff;
 }
-.footer-links li:hover {
-	background: #1d1d1d;
+.footer-logo {
+	width: 200px;
+	margin: 20px 0;
+}
+.footer ul {
+	list-style: none;
+	margin: 20px 0;
+	padding: 0;
+}
+.footer h4 {
+	font-weight: bold;
+	font-size: 17px;
+	margin-top: 20px;
 }
 /*==================Flickr widget style=============*/
 .flickr_badge_image {
@@ -1911,13 +1919,24 @@ label {
 }
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1199px)
+ 		and (min-width: 981px)
+ {
 .title-spacer {
 	height: 20%;
 }
 
+#map {
+	margin-top: 80px;
+}
+
+#wood-tracking {
+	margin-top: 70px;
+}
+
 .jumbotron {
 	height: 54vw;
+	margin-bottom: 50px;
 }
 }
 
