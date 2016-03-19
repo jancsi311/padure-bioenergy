@@ -72,6 +72,11 @@
 
 				});
 </script>
+<script type="text/javascript">
+	$(window).load(function() {
+		$(".loader").fadeOut("slow");
+	})
+</script>
 </head>
 <script> 
 $(function(){
@@ -87,6 +92,7 @@ $(function(){
 	});
 </script> 
 <body data-spy="scroll" data-target=".bs-docs-sidebar">
+<div class="loader"></div>
 <!-- Header
 		================================================== -->
 <div id="header"></div>
