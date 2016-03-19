@@ -12,8 +12,6 @@ Theme Designed/Developed for: Themesforce.com
 body {
 	position: relative;
 	background: url(../img/bg_body-noise.png);
-	background-size: 10%;
-	background-repeat: no-repeat;
 }
 
 .loader {
@@ -1676,7 +1674,7 @@ body {
 	top: 0;
 }
 .masthead h1 {
-	font-size: 2.1em;
+	font-size: 2.5em;
 }
 .masthead p,  .masthead .btn {
 	font-size: 21px;
