@@ -9,11 +9,6 @@ Theme Designed/Developed for: Themesforce.com
 /* Body and structure
 -------------------------------------------------- */
 
-body {
-	position: relative;
-	background: url(../img/bg_body-noise.png);
-}
-
 .loader {
 	position: fixed;
 	left: 0px;
