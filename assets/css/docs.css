@@ -263,6 +263,11 @@ hr.soften2 {
 	font-weight: normal;
 }
 
+.dots {
+	width: 20px;
+	padding: 3px;
+}
+
 .title-spacer {
 	height: 25%;
 }
@@ -1588,6 +1593,10 @@ label {
 	height: 54vw;
 	margin-bottom: 50px;
 }
+
+iframe {
+	height: 215px;
+}
 }
 
 
@@ -1638,7 +1647,12 @@ body {
 /* Widen masthead and social buttons to fill body padding */
 .jumbotron {
 	margin-top: 10px; /* Offset bottom margin on .navbar */
-    height: 50vw;
+    height: 91vw;
+}
+.splash img {
+    height: 100%;
+    max-width: none;
+    width: auto;
 }
 /* Adjust sidenav width */
 .bs-docs-sidenav {
@@ -1652,7 +1666,25 @@ body {
 	font-size: 2.1em;
 }
 .masthead p,  .masthead .btn {
-	font-size: 17px;
+	font-size: 21px;
+}
+iframe {
+	height: 160px;
+}
+#forest-img-1 {
+	margin-top: 190px;
+}
+#money {
+	margin-top: 45px;
+}
+#wood-tracking {
+	margin-top: 170px;
+}
+#map {
+	margin-top: 170px;
+}
+#work-img {
+	margin-top: 90px;
 }
 .navbar .btn-navbar {
 	margin-top: 50px;

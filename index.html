@@ -22,281 +22,283 @@
 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
 <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
 <!-- <script src="assets/js/jquery.js" type="text/javascript"></script>  -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js" type="text/javascript"></script> 
-<script>
-$(document).ready(function (){
-$('body').css('opacity', '0').fadeTo(2000, 1,'swing'); 
-}); 
-</script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap-dropdown.js" type="text/javascript"></script> 
+<script src="assets/js/bootstrap-tab.js" type="text/javascript"></script> 
+<script src="assets/js/bootstrap-collapse.js" type="text/javascript"></script> 
+<!--     <script src="assets/js/bootstrap-typeahead.js" type="text/javascript"></script> --> 
+<script src="assets/js/bootstrap-scrollspy.js" type="text/javascript"></script> 
+<script src="assets/js/bootstrap-affix.js" type="text/javascript"></script> 
+<script src="assets/js/custom.js" type="text/javascript"></script>  
 <script type="text/javascript">
-        $(document).ready(function () {
+				$(document).ready(function () {
 
-            var showCaseItems = $('.show-case-item').hide();
+						var showCaseItems = $('.show-case-item').hide();
 
-            var splashes = $('.splash').hide();
+						var splashes = $('.splash').hide();
 
-            splashes.eq(0).show();
-            showCaseItems.eq(0).show();
+						splashes.eq(0).show();
+						showCaseItems.eq(0).show();
 
-            var prevIndex = -1;
-            var nextIndex = 0;
-            var currentIndex = 0;
+						var prevIndex = -1;
+						var nextIndex = 0;
+						var currentIndex = 0;
 
-            $('#banner-pagination li a').click(function () {
+						$('#banner-pagination li a').click(function () {
 
-                nextIndex = parseInt($(this).attr('rel'));
+								nextIndex = parseInt($(this).attr('rel'));
 
-                if (nextIndex != currentIndex) {
-                    $('#banner-pagination li a').html('<img src="assets/img/sliderdotgrey.png" alt="slide"/>');
-                    $(this).html('<img src="assets/img/sliderdotgrey-active.png" alt="slide"/>');
-                    currentIndex = nextIndex;
-                    if (prevIndex < 0) prevIndex = 0;
+								if (nextIndex != currentIndex) {
+										$('#banner-pagination li a').html('<img class="dots" src="assets/img/sliderdotgrey.png" alt="slide"/>');
+										$(this).html('<img class="dots" src="assets/img/sliderdotgrey-active.png" alt="slide"/>');
+										currentIndex = nextIndex;
+										if (prevIndex < 0) prevIndex = 0;
 
-                    splashes.eq(prevIndex).css({ opacity: 1 }).animate({ opacity: 0 }, 500, function () {
-                        $(this).hide();
-                    });
-                    splashes.eq(nextIndex).show().css({ opacity: 0 }).animate({ opacity: 1 }, 500, function () { });
+										splashes.eq(prevIndex).css({ opacity: 1 }).animate({ opacity: 0 }, 500, function () {
+												$(this).hide();
+										});
+										splashes.eq(nextIndex).show().css({ opacity: 0 }).animate({ opacity: 1 }, 500, function () { });
 
-                    showCaseItems.eq(prevIndex).css({ opacity: 1 }).animate({ opacity: 0 }, 500, function () {
-                        $(this).hide();
-                        showCaseItems.eq(nextIndex).show().css({ opacity: 0 }).animate({ opacity: 1 }, 500, function () { });
-                    });
+										showCaseItems.eq(prevIndex).css({ opacity: 1 }).animate({ opacity: 0 }, 500, function () {
+												$(this).hide();
+												showCaseItems.eq(nextIndex).show().css({ opacity: 0 }).animate({ opacity: 1 }, 500, function () { });
+										});
 
-                    prevIndex = nextIndex;
-                }
+										prevIndex = nextIndex;
+								}
 
-                return false;
-            });
+								return false;
+						});
 
-        });
+				});
 </script>
 </head>
 <script> 
 $(function(){
-  $("#header").load("header.html"); 
-  $("#footer").load("footer.html"); 
+	$("#header").load("header.html"); 
+	$("#footer").load("footer.html"); 
 });
 </script>
 <script src="assets/js/jquery.localScroll.js" type="text/javascript"></script> 
 <script src="assets/js/jquery.scrollTo.js" type="text/javascript"></script>
 <script type="text/javascript">
-  $(document).ready(function() {
-      $('#scrolling').localScroll({duration:2000});
-  });
+	$(document).ready(function() {
+			$('#scrolling').localScroll({duration:2000});
+	});
 </script> 
 <body data-spy="scroll" data-target=".bs-docs-sidebar">
 <!-- Header
-    ================================================== -->
+		================================================== -->
 <div id="header"></div>
 <!-- Content
-    ================================================== -->
-  <div class="jumbotron masthead" id="scrolling">
-  <div class="splash"> <img src="assets/img/home-banner-bg.jpg" alt="Banner" /> </div>
-  <div class="splash"> <img src="assets/img/home-banner-bg2.jpg" alt="Banner" /> </div>
-  <div class="splash"> <img src="assets/img/home-banner-bg3.jpg" alt="Banner" /> </div>
-  <div class="container show-case-item">
-    <div class="title-spacer"></div>
-    <h1> padure bioenergy GmbH </h1>
-    <div class="title-spacer"></div>
-    <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
-    <div class="p-spacer"></div>
-    <a href="#page_1" class="details">Über uns...</a>
-    <div class="clearfix"> </div>
-  </div>
-  <div class="container show-case-item">
-    <div class="title-spacer"></div>
-    <h1> Warum Rumänien?... </h1>
-    <div class="title-spacer"></div>
-    <p> Seit dem EU-Beitritt im Jahr 2007, sind die ausländischen Investitionen sprunghaft angestiegen. Die politische und juristische Lage hat von 2007 bis zum jetzigem Zeitpunkt immer mehr stabilisiert. </p>
-    <div class="p-spacer" ></div>
-    <a href="#page_2" class="details">Mehr...</a>
-    <div class="clearfix"> </div>
-  </div>
-  <div class="container show-case-item">
-    <div class="title-spacer"></div>
-    <h1> Warum in Waldflächen investieren??? </h1>
-    <div class="title-spacer"></div>
-    <p> Die Wälder Rumäniens sind hoch profitabel durch die geringen Bewirtschaftungskosten und durch die guten Vermarktungsmöglichkeiten des Holzes auf dem inländischen Markt.</p>
-    <div class="p-spacer" ></div>
-    <a href="#page_3" class="details">Mehr...</a>
-    <div class="clearfix"> </div>
-  </div>
-  <div id="banner-pagination">
-    <ul>
-      <li><a href="#" class="active" rel="0"> <img src="assets/img/sliderdotgrey-active.png" alt="" /></a></li>
-      <li><a href="#" rel="1"> <img src="assets/img/sliderdotgrey.png" alt="" /></a></li>
-      <li><a href="#" rel="2"> <img src="assets/img/sliderdotgrey.png" alt="" /></a></li>
-    </ul>
-  </div>
+		================================================== -->
+	<div class="jumbotron masthead" id="scrolling">
+	<div class="splash"> <img src="assets/img/home-banner-bg.jpg" alt="Banner" /> </div>
+	<div class="splash"> <img src="assets/img/home-banner-bg2.jpg" alt="Banner" /> </div>
+	<div class="splash"> <img src="assets/img/home-banner-bg3.jpg" alt="Banner" /> </div>
+	<div class="container show-case-item">
+		<div class="title-spacer"></div>
+		<h1> padure bioenergy GmbH </h1>
+		<div class="title-spacer"></div>
+		<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+		<div class="p-spacer"></div>
+		<a href="#page_1" class="details">Über uns...</a>
+		<div class="clearfix"> </div>
+	</div>
+	<div class="container show-case-item">
+		<div class="title-spacer"></div>
+		<h1> Warum Rumänien?... </h1>
+		<div class="title-spacer"></div>
+		<p> Seit dem EU-Beitritt im Jahr 2007, sind die ausländischen Investitionen sprunghaft angestiegen. Die politische und juristische Lage hat von 2007 bis zum jetzigem Zeitpunkt immer mehr stabilisiert. </p>
+		<div class="p-spacer" ></div>
+		<a href="#page_2" class="details">Mehr...</a>
+		<div class="clearfix"> </div>
+	</div>
+	<div class="container show-case-item">
+		<div class="title-spacer"></div>
+		<h1> Warum in Waldflächen investieren??? </h1>
+		<div class="title-spacer"></div>
+		<p> Die Wälder Rumäniens sind hoch profitabel durch die geringen Bewirtschaftungskosten und durch die guten Vermarktungsmöglichkeiten des Holzes auf dem inländischen Markt.</p>
+		<div class="p-spacer" ></div>
+		<a href="#page_3" class="details">Mehr...</a>
+		<div class="clearfix"> </div>
+	</div>
+	<div id="banner-pagination">
+		<ul>
+			<li><a href="#" class="active" rel="0"> <img class="dots" src="assets/img/sliderdotgrey-active.png" alt="" /></a></li>
+			<li><a href="#" rel="1"> <img class="dots" src="assets/img/sliderdotgrey.png" alt="" /></a></li>
+			<li><a href="#" rel="2"> <img class="dots" src="assets/img/sliderdotgrey.png" alt="" /></a></li>
+		</ul>
+	</div>
 </div>
 <div class="content">
-  <div class="container">
-    <div class="marketing">
-      <a name="page_1"></a>
-      <hr class="soften">
-      <div class="row-fluid textleft">
-        <div class="span8">
-          <h3> <span class="firstword"></span>Herzlich Willkommen bei der padure bioenergy GmbH</h3>
-          <hr class="soften">
-          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi augue eros, porta sed maximus eget, interdum nec libero. Curabitur tristique tortor mauris, eget commodo nibh tincidunt id. Integer condimentum cursus dapibus. Quisque sit amet risus vel sem luctus pharetra. Vivamus rutrum nisi quis efficitur fermentum. Nullam placerat felis varius velit posuere aliquet. In vehicula lorem magna, at facilisis sapien semper eget. In hac habitasse platea dictumst. Donec mi nibh, venenatis sit amet imperdiet eu, suscipit id augue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer pharetra facilisis facilisis. Duis laoreet et purus eget condimentum. Aenean aliquet et elit a facilisis. Proin sit amet cursus nisi. Etiam id leo vestibulum, pellentesque felis et, rutrum erat.</p>
-          <p> Proin vel metus tellus. Maecenas ex lacus, porttitor molestie tristique dapibus, aliquam vitae magna. Nullam dictum risus pellentesque, semper tellus vel, vestibulum augue. Sed quis laoreet neque, at elementum ante. Pellentesque ut massa eu ipsum tincidunt sollicitudin ut vel sapien. Nunc quis felis non enim volutpat iaculis. Proin ac velit leo. Duis vel scelerisque sapien. Donec sed aliquet libero. Proin volutpat lorem rutrum justo sodales aliquet. Sed sagittis luctus volutpat. </p>
-          <p> Quisque sit amet risus vel sem luctus pharetra. Vivamus rutrum nisi quis efficitur fermentum. Nullam placerat felis varius velit posuere aliquet. In vehicula lorem magna, at facilisis sapien semper eget. In hac habitasse platea dictumst. Donec mi nibh, venenatis sit amet imperdiet eu, suscipit id augue.</p>
-        </div>
-        <div class="span4">
-          <img class="" src="assets/img/Logo.png" alt="" style=" padding-top: 30px; width: 281px; box-shadow: none;" />
-          <img class="img-border" src="assets/img/forest2.jpg" alt="" />
-        </div>
-      </div>
-      <hr class="soften">
-      <div class="row-fluid textleft">
-        <div class="span12">
-          <h3>Informationen über Rumänien</h3> 
-          <hr class="soften">
-          <p>Damit es ihnen leichter fällt, sich einen Einblick über Rumänien zu machen, haben wir drei Kurzfilme für sie zusammengestellt. Lassen sie die Natur und die Menschen von Rumänien auf sie einwirken.</p>
-        </div>
-      </div>
-      <div class="row-fluid textleft">
-          <iframe class="span5" height="260" src="https://www.youtube.com/embed/ZNqAnBwUP50" frameborder="0" allowfullscreen></iframe>
-          <div class="span2"></div>
-          <iframe class="span5" height="260" src="https://www.youtube.com/embed/DkbT9uyFJPw" frameborder="0" allowfullscreen></iframe>
-      </div>
-      <div class="row-fluid textleft">
-        <div class="span3"></div>
-        <iframe class="span6" src="https://player.vimeo.com/video/153632173?color=ffffff" height="310" style="margin: 0 auto" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-        <div class="span3"></div>
-      </div>
-      <a name="page_2"></a>
-      <hr class="soften">
-      <div class="row-fluid textleft">
-        <div class="span12">
-          <h3>Warum Rumänien?...</h3>
-          <hr class="soften">
-        </div>
-      </div>
-      <div class="row-fluid textleft">
-        <div class="span7">
-          <p> Seit dem EU-Beitritt im Jahr 2007, sind die ausländischen Investitionen sprunghaft angestiegen.</p>
-          <p>Die politische und juristische Lage hat von 2007 bis zum jetzigem Zeitpunkt immer mehr stabilisiert. In den letzten 3 Jahren hat die rumänische Regierung enorme Anstrengungen unternommen, um gegen Korruption und Amtsmissbrauch zu kämpfen und die wirtschaftlichen und politischen Voraussetzungen stark zu verbessern.</p>
-          <p>Das führte zu deutlich mehr Vertrauen ausländischer Investoren. Man spürt ein Zusammenwachsen von ausländischen Unternehmen und der Bevölkerung Rumäniens.</p>
-          <p><strong>Die Wirtschaft Rumäniens liegt innerhalb der EU an 1. Stelle. Das Wirtschaftswachstum lag im Jahr 2014 bei 2,6%.</strong></p>
-          <p>Die Kaufpreise von land- und forstwirtschaftlichen Flächen sind weit unter dem Durchschnitt der westlichen Ländern Europas. Die Preise bewegen sich auf einem Niveau von <strong>1500,-€ bis 4500,-€ pro ha</strong>. Die Preise richten sich nach Beschaffenheit des Waldes, Größe, Lage, Baumart, Festmeter pro ha, Einschlagsplan und natürlich nach dem Besitzer und dessen Vorstellungen.</p>
-        </div>
-        <div class="span5">
-          <img class="img-border" id="forest-img-1" src="assets/img/forest_2.jpg" alt="Wald" />
-        </div>
-      </div>
-      <div class="row-fluid textleft">
-        <div class="span12">
-          <hr class="soften">
-          <h3>Weitere Gründe um in Rumänien auch speziell in Wald zu investieren</h3>
-          <hr class="soften">
-        </div>
-      </div>
-      <div class="row-fluid textleft">
-        <div class="span6">
-          <img class="img-border" id="work-img" src="assets/img/work.jpg" alt="Bearbeitung" />
-        </div>
-        <div class="span6">
-          <p>Die Forstwirtschaft ist seit Jahrhunderten ein Hauptwirtschaftszweig der rumänischen Wirtschaft. Es gibt eine gut ausgebaute holzverarbeitende Industrie. Von großen Sägewerken, mit einem Jahresbedarf von <strong>über einer Million Festmeter</strong>, bis zu vielen kleinen und mittleren Sägewerken und Schreinereien, die durch Veredelung auf dem gleichen Preisniveau der großen Firmen liegen.</p>
-          <p>Die geltenden Rechtsvorschriften bezüglich ausländische Investitionen wurden so geändert, das Investoren mehr Sicherheit und Anreize haben in Rumänien zu investieren.</p>
-        </div>
-      </div>
-      <div class="row-fluid textleft">
-        <div class="span12">
-          <hr class="soften">
-          <h3>Rechte der Anleger/Investoren</h3>
-          <hr class="soften">
-          <ul>
-            <li><strong>erarbeitete Gewinne können nach Zahlung der landesüblichen Steuern wieder in das Ursprungsland zurückfliesssen,</strong></li>
-            <li><strong>es können leichter Partnerschaften geschaffen und Investitionen getätigt werden, der behördliche Aufwand wurde minimiert und verständlicher geregelt</strong></li>
-            <li><strong>ab dem Jahr 2015 können auch Privatpersonen forstliche Flächen erwerben</strong></li>
-          </ul> 
-        </div>
-      </div>
-      <hr class="soften">
-      <a name="page_3"></a>
-      <div class="row-fluid textleft">
-        <div class="span12">
-          <h3>Warum in Waldflächen investieren??? </h3>
-          <hr class="soften">
-          <div class="span1"></div>
-          <img class="img-border span10" src="assets/img/forest_1.jpg" alt="Wald" />
-          <div class="span1"></div>
-        </div>
-      </div>
-      <div class="row-fluid textleft">
-        <div class="span12">
-          <div class="span7">
-            <p>Betrachtet als eine wichtige Ressource, die Waldfläche in Rumänien betrug <strong>6,39 Millionen Hektar</strong> im Jahr 2014, mit einem leichten Anstieg gegenüber dem Vorjahr:</p>
-            <ul>
-              <li><strong>3.22 Millionen Hektar sind in Staatseigentum,</strong></li>
-              <li><strong>3.17 Millionen Hektar sind in privaten und öffentlichen  Eigentum.</strong></li>
-            </ul>
-              <p>Aufteilung der Wälder nach geographischen Aspekten: </p>
-            <ul>
-              <li><strong>Bergland, mit Nadel- und Buchenwalder - 66%; </strong></li>
-              <li><strong>Hügelland, mit Eichen- und Buchenwalder - 24%;</strong></li>
-              <li><strong>Flachland, mit gemischten Laubwälder - 10%.</strong></li>
-            </ul>
-            <p>Das Ergebnis der Nationalen Forst Inventur zeigt, das in den Wälder Rumäniens einen Volumen von 2,29 Milliarden Festmeter vorhanden sind. Mit einem Volumen pro Hektar von 300 Festmeter, liegt Rumänien im europäischem Vergleich im oberen Drittel.</p>
-          </div>
-          <div class="span5">
-            <img class="img-border" id="map" src="assets/img/map.png" alt="Karte" />
-          </div>
-        </div>
-      </div>
-      <div class="row-fluid textleft">
-        <div class="span12">
-          <p>Der Holzvorrat von <strong>2,29 Milliarden Festmeter</strong> ist in enormer Anstieg im Vergleich mit der Schätzung des voran gegangenen Forst Inventur des Jahres 1986 die den Holzvorrat ,,nur“ auf 1,44 Milliarden Festmeter geschätzt hat. Die forstliche Inventur im Zeitraum 2008-2013 wurde durch eine Methoden, die dem westlichen Standard entsprach durchgeführt. Verbunden mit großen menschlichen Anstrengung und erheblichen Kosten, aber auch mit einem Holzvolumen, das dem tatsächlichen wissenschaftlich, forstlichen Ergebnis entspricht.</p>
-          <p>Dieses ist auch der Grund weshalb das Holzgeschäft eine wichtige Einnahmequelle für viele Firmen und Privatpersonen in Rumänien ist.</p>
-        </div>
-      </div>
-      <div class="row-fluid textleft">
-        <div class="span12">
-          <div class="span6">
-            <img class="img-border" id="wood-tracking" src="assets/img/wood_tracking.png" alt="Wood Tracking" style="width: 400px" />
-          </div>
-          <div class="span6">
-            <p>Die Situation des illegalen Holzeinschlags <strong>(die reale Situation, nicht die aus der Presse)</strong> wurde ab dem Jahr 2014  stark verbessert. Durch die Einführung des Holzüberwachungssystems <strong>„Wood Tracking“</strong> und durch Anpassung Rumäniens an die europäische Gesetzgebung, wurde eine Überwachung des gesamten Holzeinschlag und Holztransportes geschaffen. <strong>LÜCKENLOS</strong> und einmalig in Europa.</p>
-            <p>Die Reduzierung des geernteten Holzvolumens hat zu einer künstlichen Verknappung des Holzes geführt, für die Holzindustrie sowie auch die Versorgung mit Brennholz der Bevölkerung. In einigen Gegenden ist der Preis für Brennholz ist bis zur <strong>90,- Euro/Fm</strong> gestiegen.</p>
-            <p>Im Rahmen des neuen Forstgesetzes werden Kompensation Zahlungen durch die Regierung für Schutzwälder die keine Holzeinschläge vorsehen, als Ausgleich an den Privatwaldbesitzer geleistet.</p>
-          </div>
-        </div>
-      </div>
-      <div class="row-fluid textleft">
-        <div class="span12">
-          <div class="span8">
-            <p>Eine hohe Reinvestition wird durch die Nutzung des Waldes (ökologisch vertretbar, nach den forstlichen Gesetzen) und durch die Wertsteigerung der Forstimmobilie erzielt.</p>
-            <p>Die Wälder Rumäniens sind hoch profitabel durch die geringen Bewirtschaftungskosten und durch die guten Vermarktungsmöglichkeiten des Holzes auf dem inländischen Markt.  In den letzten Jahren wurden circa <strong>400.000 Hektar Wald</strong> von ausländischen Investoren erworben.</p>
-          </div>
-          <div class="span4">
-            <img class="img-border" src="assets/img/money.jpg" alt="Geld" />
-          </div>
-        </div>
-        <div class="span12" style="height:40px"></div>
-      </div>
-    </div>
-  </div>
+	<div class="container">
+		<div class="marketing">
+			<a name="page_1"></a>
+			<hr class="soften">
+			<div class="row-fluid textleft">
+				<div class="span8">
+					<h3> <span class="firstword"></span>Herzlich Willkommen bei der padure bioenergy GmbH</h3>
+					<hr class="soften">
+					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi augue eros, porta sed maximus eget, interdum nec libero. Curabitur tristique tortor mauris, eget commodo nibh tincidunt id. Integer condimentum cursus dapibus. Quisque sit amet risus vel sem luctus pharetra. Vivamus rutrum nisi quis efficitur fermentum. Nullam placerat felis varius velit posuere aliquet. In vehicula lorem magna, at facilisis sapien semper eget. In hac habitasse platea dictumst. Donec mi nibh, venenatis sit amet imperdiet eu, suscipit id augue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer pharetra facilisis facilisis. Duis laoreet et purus eget condimentum. Aenean aliquet et elit a facilisis. Proin sit amet cursus nisi. Etiam id leo vestibulum, pellentesque felis et, rutrum erat.</p>
+					<p> Proin vel metus tellus. Maecenas ex lacus, porttitor molestie tristique dapibus, aliquam vitae magna. Nullam dictum risus pellentesque, semper tellus vel, vestibulum augue. Sed quis laoreet neque, at elementum ante. Pellentesque ut massa eu ipsum tincidunt sollicitudin ut vel sapien. Nunc quis felis non enim volutpat iaculis. Proin ac velit leo. Duis vel scelerisque sapien. Donec sed aliquet libero. Proin volutpat lorem rutrum justo sodales aliquet. Sed sagittis luctus volutpat. </p>
+					<p> Quisque sit amet risus vel sem luctus pharetra. Vivamus rutrum nisi quis efficitur fermentum. Nullam placerat felis varius velit posuere aliquet. In vehicula lorem magna, at facilisis sapien semper eget. In hac habitasse platea dictumst. Donec mi nibh, venenatis sit amet imperdiet eu, suscipit id augue.</p>
+				</div>
+				<div class="span4">
+					<img class="" src="assets/img/Logo.png" alt="" style=" padding-top: 30px; width: 281px; box-shadow: none;" />
+					<img class="img-border" src="assets/img/forest2.jpg" alt="" />
+				</div>
+			</div>
+			<hr class="soften">
+			<div class="row-fluid textleft">
+				<div class="span12">
+					<h3>Informationen über Rumänien</h3> 
+					<hr class="soften">
+					<p>Damit es ihnen leichter fällt, sich einen Einblick über Rumänien zu machen, haben wir drei Kurzfilme für sie zusammengestellt. Lassen sie die Natur und die Menschen von Rumänien auf sie einwirken.</p>
+				</div>
+			</div>
+			<div class="row-fluid textleft">
+					<iframe class="span5" height="260" src="https://www.youtube.com/embed/ZNqAnBwUP50" frameborder="0" allowfullscreen></iframe>
+					<div class="span2"></div>
+					<iframe class="span5" height="260" src="https://www.youtube.com/embed/DkbT9uyFJPw" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="row-fluid textleft">
+				<div class="span3"></div>
+				<iframe class="span6" src="https://player.vimeo.com/video/153632173?color=ffffff" height="310" style="margin: 0 auto" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				<div class="span3"></div>
+			</div>
+			<a name="page_2"></a>
+			<hr class="soften">
+			<div class="row-fluid textleft">
+				<div class="span12">
+					<h3>Warum Rumänien?...</h3>
+					<hr class="soften">
+				</div>
+			</div>
+			<div class="row-fluid textleft">
+				<div class="span7">
+					<p> Seit dem EU-Beitritt im Jahr 2007, sind die ausländischen Investitionen sprunghaft angestiegen.</p>
+					<p>Die politische und juristische Lage hat von 2007 bis zum jetzigem Zeitpunkt immer mehr stabilisiert. In den letzten 3 Jahren hat die rumänische Regierung enorme Anstrengungen unternommen, um gegen Korruption und Amtsmissbrauch zu kämpfen und die wirtschaftlichen und politischen Voraussetzungen stark zu verbessern.</p>
+					<p>Das führte zu deutlich mehr Vertrauen ausländischer Investoren. Man spürt ein Zusammenwachsen von ausländischen Unternehmen und der Bevölkerung Rumäniens.</p>
+					<p><strong>Die Wirtschaft Rumäniens liegt innerhalb der EU an 1. Stelle. Das Wirtschaftswachstum lag im Jahr 2014 bei 2,6%.</strong></p>
+					<p>Die Kaufpreise von land- und forstwirtschaftlichen Flächen sind weit unter dem Durchschnitt der westlichen Ländern Europas. Die Preise bewegen sich auf einem Niveau von <strong>1500,-€ bis 4500,-€ pro ha</strong>. Die Preise richten sich nach Beschaffenheit des Waldes, Größe, Lage, Baumart, Festmeter pro ha, Einschlagsplan und natürlich nach dem Besitzer und dessen Vorstellungen.</p>
+				</div>
+				<div class="span5">
+					<img class="img-border" id="forest-img-1" src="assets/img/forest_2.jpg" alt="Wald" />
+				</div>
+			</div>
+			<div class="row-fluid textleft">
+				<div class="span12">
+					<hr class="soften">
+					<h3>Weitere Gründe um in Rumänien auch speziell in Wald zu investieren</h3>
+					<hr class="soften">
+				</div>
+			</div>
+			<div class="row-fluid textleft">
+				<div class="span6">
+					<img class="img-border" id="work-img" src="assets/img/work.jpg" alt="Bearbeitung" />
+				</div>
+				<div class="span6">
+					<p>Die Forstwirtschaft ist seit Jahrhunderten ein Hauptwirtschaftszweig der rumänischen Wirtschaft. Es gibt eine gut ausgebaute holzverarbeitende Industrie. Von großen Sägewerken, mit einem Jahresbedarf von <strong>über einer Million Festmeter</strong>, bis zu vielen kleinen und mittleren Sägewerken und Schreinereien, die durch Veredelung auf dem gleichen Preisniveau der großen Firmen liegen.</p>
+					<p>Die geltenden Rechtsvorschriften bezüglich ausländische Investitionen wurden so geändert, das Investoren mehr Sicherheit und Anreize haben in Rumänien zu investieren.</p>
+				</div>
+			</div>
+			<div class="row-fluid textleft">
+				<div class="span12">
+					<hr class="soften">
+					<h3>Rechte der Anleger/Investoren</h3>
+					<hr class="soften">
+					<ul>
+						<li><strong>erarbeitete Gewinne können nach Zahlung der landesüblichen Steuern wieder in das Ursprungsland zurückfliesssen,</strong></li>
+						<li><strong>es können leichter Partnerschaften geschaffen und Investitionen getätigt werden, der behördliche Aufwand wurde minimiert und verständlicher geregelt</strong></li>
+						<li><strong>ab dem Jahr 2015 können auch Privatpersonen forstliche Flächen erwerben</strong></li>
+					</ul> 
+				</div>
+			</div>
+			<hr class="soften">
+			<a name="page_3"></a>
+			<div class="row-fluid textleft">
+				<div class="span12">
+					<h3>Warum in Waldflächen investieren??? </h3>
+					<hr class="soften">
+					<div class="span1"></div>
+					<img class="img-border span10" src="assets/img/forest_1.jpg" alt="Wald" style="margin-left: 0" />
+					<div class="span1"></div>
+				</div>
+			</div>
+			<div class="row-fluid textleft">
+				<div class="span12">
+					<div class="span7">
+						<p>Betrachtet als eine wichtige Ressource, die Waldfläche in Rumänien betrug <strong>6,39 Millionen Hektar</strong> im Jahr 2014, mit einem leichten Anstieg gegenüber dem Vorjahr:</p>
+						<ul>
+							<li><strong>3.22 Millionen Hektar sind in Staatseigentum,</strong></li>
+							<li><strong>3.17 Millionen Hektar sind in privaten und öffentlichen  Eigentum.</strong></li>
+						</ul>
+							<p>Aufteilung der Wälder nach geographischen Aspekten: </p>
+						<ul>
+							<li><strong>Bergland, mit Nadel- und Buchenwalder - 66%; </strong></li>
+							<li><strong>Hügelland, mit Eichen- und Buchenwalder - 24%;</strong></li>
+							<li><strong>Flachland, mit gemischten Laubwälder - 10%.</strong></li>
+						</ul>
+						<p>Das Ergebnis der Nationalen Forst Inventur zeigt, das in den Wälder Rumäniens einen Volumen von 2,29 Milliarden Festmeter vorhanden sind. Mit einem Volumen pro Hektar von 300 Festmeter, liegt Rumänien im europäischem Vergleich im oberen Drittel.</p>
+					</div>
+					<div class="span5">
+						<img class="img-border" id="map" src="assets/img/map.png" alt="Karte" />
+					</div>
+				</div>
+			</div>
+			<div class="row-fluid textleft">
+				<div class="span12">
+					<p>Der Holzvorrat von <strong>2,29 Milliarden Festmeter</strong> ist in enormer Anstieg im Vergleich mit der Schätzung des voran gegangenen Forst Inventur des Jahres 1986 die den Holzvorrat ,,nur“ auf 1,44 Milliarden Festmeter geschätzt hat. Die forstliche Inventur im Zeitraum 2008-2013 wurde durch eine Methoden, die dem westlichen Standard entsprach durchgeführt. Verbunden mit großen menschlichen Anstrengung und erheblichen Kosten, aber auch mit einem Holzvolumen, das dem tatsächlichen wissenschaftlich, forstlichen Ergebnis entspricht.</p>
+					<p>Dieses ist auch der Grund weshalb das Holzgeschäft eine wichtige Einnahmequelle für viele Firmen und Privatpersonen in Rumänien ist.</p>
+				</div>
+			</div>
+			<div class="row-fluid textleft">
+				<div class="span12">
+					<div class="span6">
+						<img class="img-border" id="wood-tracking" src="assets/img/wood_tracking.png" alt="Wood Tracking" style="width: 400px" />
+					</div>
+					<div class="span6">
+						<p>Die Situation des illegalen Holzeinschlags <strong>(die reale Situation, nicht die aus der Presse)</strong> wurde ab dem Jahr 2014  stark verbessert. Durch die Einführung des Holzüberwachungssystems <strong>„Wood Tracking“</strong> und durch Anpassung Rumäniens an die europäische Gesetzgebung, wurde eine Überwachung des gesamten Holzeinschlag und Holztransportes geschaffen. <strong>LÜCKENLOS</strong> und einmalig in Europa.</p>
+						<p>Die Reduzierung des geernteten Holzvolumens hat zu einer künstlichen Verknappung des Holzes geführt, für die Holzindustrie sowie auch die Versorgung mit Brennholz der Bevölkerung. In einigen Gegenden ist der Preis für Brennholz ist bis zur <strong>90,- Euro/Fm</strong> gestiegen.</p>
+						<p>Im Rahmen des neuen Forstgesetzes werden Kompensation Zahlungen durch die Regierung für Schutzwälder die keine Holzeinschläge vorsehen, als Ausgleich an den Privatwaldbesitzer geleistet.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row-fluid textleft">
+				<div class="span12">
+					<div class="span8">
+						<p>Eine hohe Reinvestition wird durch die Nutzung des Waldes (ökologisch vertretbar, nach den forstlichen Gesetzen) und durch die Wertsteigerung der Forstimmobilie erzielt.</p>
+						<p>Die Wälder Rumäniens sind hoch profitabel durch die geringen Bewirtschaftungskosten und durch die guten Vermarktungsmöglichkeiten des Holzes auf dem inländischen Markt.  In den letzten Jahren wurden circa <strong>400.000 Hektar Wald</strong> von ausländischen Investoren erworben.</p>
+					</div>
+					<div class="span4">
+						<img class="img-border" id="money" src="assets/img/money.jpg" alt="Geld" />
+					</div>
+				</div>
+				<div class="span12" style="height:40px"></div>
+			</div>
+		</div>
+	</div>
 </div>
 <!-- Footer
-    ================================================== -->
+		================================================== -->
 <div id="footer"></div>
 <!-- Le javascript
-    ================================================== --> 
+		================================================== --> 
 <!-- Placed at the end of the document so the pages load faster --> 
 <script src="assets/js/bootstrap-transition.js" type="text/javascript"></script> 
-<script src="assets/js/bootstrap-alert.js" type="text/javascript"></script> 
-<script src="assets/js/bootstrap-modal.js" type="text/javascript"></script> 
-<script src="assets/js/bootstrap-dropdown.js" type="text/javascript"></script> 
-<script src="assets/js/bootstrap-scrollspy.js" type="text/javascript"></script> 
-<script src="assets/js/bootstrap-tab.js" type="text/javascript"></script> 
-<script src="assets/js/bootstrap-tooltip.js" type="text/javascript"></script> 
-<script src="assets/js/bootstrap-popover.js" type="text/javascript"></script> 
+<!-- <script src="assets/js/bootstrap-alert.js" type="text/javascript"></script> 
+<script src="assets/js/bootstrap-modal.js" type="text/javascript"></script>  -->
+<!-- <script src="assets/js/bootstrap-dropdown.js" type="text/javascript"></script>  -->
+<!-- <script src="assets/js/bootstrap-scrollspy.js" type="text/javascript"></script>  -->
+<!-- <script src="assets/js/bootstrap-tab.js" type="text/javascript"></script>  -->
+<!-- <script src="assets/js/bootstrap-tooltip.js" type="text/javascript"></script> 
+<script src="assets/js/bootstrap-popover.js" type="text/javascript"></script>  -->
 <script src="assets/js/bootstrap-button.js" type="text/javascript"></script> 
-<script src="assets/js/bootstrap-collapse.js" type="text/javascript"></script> 
-<script src="assets/js/bootstrap-carousel.js" type="text/javascript"></script> 
-<script src="assets/js/bootstrap-typeahead.js" type="text/javascript"></script> 
-<script src="assets/js/bootstrap-affix.js" type="text/javascript"></script> 
+<!-- <script src="assets/js/bootstrap-collapse.js" type="text/javascript"></script>  -->
+<!-- <script src="assets/js/bootstrap-carousel.js" type="text/javascript"></script>  -->
+<!-- <script src="assets/js/bootstrap-typeahead.js" type="text/javascript"></script>  -->
+<!-- <script src="assets/js/bootstrap-affix.js" type="text/javascript"></script>  -->
 <script src="assets/js/superfish.js" type="text/javascript"></script> 
 <script src="assets/js/custom.js" type="text/javascript"></script> 
 </body>
