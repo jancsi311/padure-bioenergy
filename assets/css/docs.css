@@ -499,7 +499,6 @@ hr.soften2 {
 }
 /* Marketing section of Overview
 -------------------------------------------------- */
-
 .marketing {
 	text-align: center;
 	color: #000;
@@ -535,7 +534,7 @@ hr.soften2 {
 	display: block;
 	margin: 0 auto 50px auto;
 }
-iframe {
+iframe, #googleMap {
 	display: block;
 	box-shadow: 10px 10px 20px #000000;
 	border: 3px solid #C76E10;
