@@ -93,7 +93,7 @@ $(function(){
 <!-- Header
 		================================================== -->
 <div class="nav-agency">
-    <div class="navbar navbar-static-top"> 
+    <div class="navbar navbar-static-top" id="top_position"> 
       <div class="navbar-inner">
         <div class="container"> <a class="brand" href="index.html"> <img src="assets/img/Logo.png" alt="Logo"></a>
           <div id="main-nav">
@@ -118,6 +118,11 @@ $(function(){
       </div>
     </div>
 </div> 
+<span id="top-link-block" class="hidden">
+    <a href="#top_position" class="well well-sm" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+        <i class="glyphicon glyphicon-chevron-up"></i> Back to Top
+    </a>
+</span>
 <!-- Content
 		================================================== -->
 	<div class="jumbotron masthead" id="scrolling">
@@ -162,7 +167,7 @@ $(function(){
 <div class="content">
 	<div class="container">
 		<div class="marketing">
-			<a name="page_1"></a>
+			<a name="page_1" class="scroll_marker"></a>
 			<hr class="soften">
 			<div class="row-fluid textleft">
 				<div class="span12">
@@ -214,7 +219,7 @@ $(function(){
 				<iframe class="span6" src="https://player.vimeo.com/video/153632173?color=ffffff" height="310" style="margin: 0 auto" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 				<div class="span3"></div>
 			</div>
-			<a name="page_2"></a>
+			<a name="page_2" class="scroll_marker"></a>
 			<hr class="soften">
 			<div class="row-fluid textleft">
 				<div class="span12">
@@ -263,13 +268,48 @@ $(function(){
 				</div>
 			</div>
 			<hr class="soften">
-			<a name="page_3"></a>
+			<a name="page_3" class="scroll_marker"></a>
 			<div class="row-fluid textleft">
 				<div class="span12">
 					<h3>Warum in Waldflächen investieren??? </h3>
 					<hr class="soften">
 					<div class="span1"></div>
-					<img class="img-border span10" src="assets/img/forest_1.jpg" alt="Wald" style="margin-left: 0" />
+					<!-- <img class="img-border span10" src="assets/img/forest_1.jpg" alt="Wald" style="margin-left: 0" /> -->
+          <div class="container">
+            <br>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <img src="assets/img/home-banner-bg.jpg" alt="Chania" width="80%">
+                </div>
+
+                <div class="item">
+                  <img src="assets/img/home-banner-bg2.jpg" alt="Chania" width="80%">
+                </div>
+              
+                <div class="item">
+                  <img src="assets/img/home-banner-bg3.jpg" alt="Flower" width="80%">
+                </div>
+
+                <div class="item">
+                  <img src="assets/img/home-banner-bg2.jpg" alt="Flower" width="80%">
+                </div>
+              </div>
+
+              <!-- Left and right controls -->
+              <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only"><</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">></span>
+              </a>
+            </div>
+
+          </div>
 					<div class="span1"></div>
 				</div>
 			</div>

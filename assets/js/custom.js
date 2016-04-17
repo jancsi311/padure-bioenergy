@@ -43,6 +43,13 @@ $(function ($) {
 
 
 $(document).ready(function () {
+
+	if ( ($(window).height() + 100) < $(document).height() ) {
+	    $('#top-link-block').removeClass('hidden').affix({
+	        // how far to scroll down before link "slides" into view
+	        offset: {top:100}
+	    });
+	}
     $('#demo-side-bar').prepend($('<div id="bsa-close">x</div>').click(function () { $('#demo-side-bar').addClass('demobar-hidden').hide().remove(); }));
     try {
         /* isotope for item filtering */
