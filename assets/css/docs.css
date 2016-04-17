@@ -251,6 +251,12 @@ hr.soften2 {
 /* Masthead (docs home)
 ------------------------- */
 
+.tatigkeit {
+	font-weight: bold;
+	font-size: 18px;
+	color: #C76E10;
+}
+
 .masthead {
 	background: 
 		linear-gradient( 
@@ -503,6 +509,26 @@ hr.soften2 {
 .subhead .navbar {
 	display: none;
 }
+
+/* juristisches.html
+-------------------------------------------------- */
+
+.juristisches p, li {
+	text-align: justify;
+	font-size: 16px;
+	line-height: 1.6;
+	margin-bottom: 10px;
+}
+
+.juristisches p, h4 {
+	text-indent: 40px;
+}
+
+.juristisches h4 {
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+
 /* Marketing section of Overview
 -------------------------------------------------- */
 .marketing {
@@ -521,6 +547,7 @@ hr.soften2 {
 	margin-bottom: 20px;
 }
 .marketing p, li {
+	text-align: justify;
 	font-size: 16px;
 	line-height: 1.6;
 	margin-bottom: 10px;
